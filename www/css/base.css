@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,dt,li,input,form,textarea,select,input{padding:0;margin:0;}
+/*i,em,strong,b最好不设置字体大小,方便继承父级字体大小*/
+i,em,strong,b{font-style:normal;font-weight:normal;}
+input{border:none;}
+select, input{ vertical-align: middle;}
+img { vertical-align: middle; outline: none;/*谷歌浏览器自带边框*/ }
+img{display:block;/*解决img下面会有空隙的bug*/border:none;/*a包img---IE会出现边框*/}
+
+
+
+/*ie去除input text和password类型的默认样式*/
+input::-ms-clear{display:none;}/*x*/
+input::-ms-reveal{display:none;}/*眼*/
+
+ul,ol,li{list-style:none;}
+
+
+a{color:#000;text-decoration:none;}
+
+
+
+.clearfix{zoom:1;}/*clear:both兼容ie写法*/
+.clearfix:after{content:"";display:block;clear:both;}
+
+.fr{float:right;}
+.fl{float:left;}
+
+
+.space20{margin-right:20px;}
